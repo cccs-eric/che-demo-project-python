@@ -13,9 +13,9 @@ components:
 commands:
   - name: run
     actions:
-      - workdir: '${CHE_PROJECTS_ROOT}/python-hello-world'
+      - workdir: '${CHE_PROJECTS_ROOT}/che-demo-project-python'
         type: exec
-        command: '. ${CHE_PROJECTS_ROOT}/.venv/bin/activate &&  python hello-world.py'
+        command: '. ${CHE_PROJECTS_ROOT}/.venv/bin/activate &&  python main.py'
         component: python
   - name: set up venv
     actions:
